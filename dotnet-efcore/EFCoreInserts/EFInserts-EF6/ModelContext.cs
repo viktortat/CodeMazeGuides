@@ -12,8 +12,7 @@ public class ModelContext : DbContext
     {
     }
 
-    public ModelContext(string connectionString)
-        : base(connectionString)
+    public ModelContext(string connectionString) : base(connectionString)
     {
     }
 

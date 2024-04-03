@@ -15,12 +15,14 @@ namespace ShoeApi.Controllers
             _shoeRepository = shoeRepository;
         }
 
+        //https://localhost:5001/api/Shoes
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(_shoeRepository.GetShoes());
         }
 
+        https://localhost:5001/api/Shoes/3
         [HttpDelete("{id:int}")]
         public IActionResult Delete(int id)
         {

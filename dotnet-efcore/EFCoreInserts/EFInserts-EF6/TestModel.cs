@@ -62,8 +62,7 @@ public class TestModel
         return context;
     }
 
-    public TestModel()
-    : this(BuildModelContext())
+    public TestModel() : this(BuildModelContext())
     {
      
     }

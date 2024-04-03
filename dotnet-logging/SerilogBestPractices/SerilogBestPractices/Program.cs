@@ -4,7 +4,7 @@ using SerilogBestPractices.Models;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.File(
-        "logs/log.txt",
+        "./logs/log.txt",
         retainedFileCountLimit: 21,
         rollingInterval: RollingInterval.Day)
     .MinimumLevel.Information()
